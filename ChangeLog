@@ -10,6 +10,8 @@
 	* DESCRIPTION: Idem
 	* .github/workflows/ci.yaml: Add CI support
 
+	* README.md: Added
+
 2026-05-29  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Minimally working version exporting header
