@@ -1,6 +1,35 @@
 2026-05-31  Dirk Eddelbuettel  <edd@debian.org>
 
-	* R/tl.R: Added tinyrox documentation
+	* inst/include/tl.h: Expanded following added `rspdlite` support
+	* R/tl.R: Idem, also added tinyrox documentation
 	* man/trace.Rd: Generated
 	* NAMESPACE: Generated
 
+	* inst/tinytest/test_basics.R: Add initial unit test support
+	* tests/tinytest.R: Idem
+	* DESCRIPTION: Idem
+	* .github/workflows/ci.yaml: Add CI support
+
+2026-05-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Minimally working version exporting header
+	* inst/include/tl.h: Added new (re-)exporting header
+	* src/tl.cpp: Moved content to new header
+	* src/RcppExports.cpp: Regenerated
+	* R/RcppExports.R: Idem
+	* man/tl-package: Idem
+	* NAMESPACE: Idem
+
+2026-05-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Initial minimal version
+	* src/tl.cpp: Idem
+	* src/RcppExports.cpp: Idem
+	* R/RcppExports.R: Idem
+	* man/tl-package: Idem
+	* NAMESPACE: Idem
+
+	* .Rbuildignore: Added
+	* .editorconfig: Idem
+	* .gitignore: Idem
+	* cleanup: Idem
