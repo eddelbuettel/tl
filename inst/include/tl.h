@@ -33,4 +33,9 @@ namespace tl {
         rspdlite::log_critical(s, std::forward<Args>(args)...);
     }
 
+    inline void        set_level(const std::string& s) { rspdlite::set_level(s);       }
+    inline std::string get_level()                     { return rspdlite::get_level(); }
+
+    inline void        set_name(const std::string& s) { rspdlite::set_name(s);       }
+    inline std::string get_name()                     { return rspdlite::get_name(); }
 }
