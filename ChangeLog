@@ -1,0 +1,6 @@
+2026-05-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/tl.R: Added tinyrox documentation
+	* man/trace.Rd: Generated
+	* NAMESPACE: Generated
+

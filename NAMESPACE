@@ -1,1 +1,12 @@
-exportPattern("^[[:alpha:]]+")
+# tinyrox says don't edit this manually, but it can't stop you!
+
+export(critical)
+export(debug)
+export(error)
+export(get_level)
+export(get_name)
+export(info)
+export(set_level)
+export(set_name)
+export(trace)
+export(warn)
