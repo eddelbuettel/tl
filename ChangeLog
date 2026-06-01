@@ -3,6 +3,7 @@
 	* R/tl.R (set_format): Add and document format setter
 	* man/trace.Rd: Regenerated
 	* NAMESPACE: Idem
+	* inst/tinytest/test_formats.R: Add tests
 
 2026-05-31  Dirk Eddelbuettel  <edd@debian.org>
 
