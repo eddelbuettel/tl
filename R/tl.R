@@ -8,6 +8,12 @@
 #' \code{tl::debug("Condition met, value {}", val)} works from both.
 #' See the \pkg{rspdlite} package for more.
 #' @param ... Argument(s) passed along
+#' @param utc Boolean flag to select display of current time in UTC rather than local,
+#' default is off
+#' @param show_date Boolean flag to select display of date part of current, default is on
+#' @param show_thread_id Boolean flag to select display of current thread, default is off
+#' @param precision Character value for selected time precision: one of \dQuote{ms}
+#' (the default format), \dQuote{us}, \dQuote{ns} or \dQuote{none}
 #' @return In general, nothing is returned as the functions are invoked
 #' for their side effect of logging.
 #' @seealso \pkg{rspdlite}
@@ -21,7 +27,11 @@
 #' tl::warn("A warning messages passes at level warning. {}", 42L)
 #' tl::set_name("my_logger")
 #' tl::error("Error messages also pass, and see the name set")
-#' tl::set_level(lvl) # rever to prior level
+#' tl::set_format(show_thread_id=TRUE, precision="ns")
+#' tl::error("Warning message under changed formatting")
+#' tl::set_level(lvl) # revert to prior level
+#' tl::set_name("") # revert to no name
+#' tl::set_format() # revert to default format
 trace <- function(...) { rspdlite::log_trace(...) }
 
 #' @rdname trace
@@ -59,6 +69,15 @@ set_name <- function(...) { rspdlite::set_name(...) }
 #' @rdname trace
 #' @export
 get_name <- function() { rspdlite::get_name()  }
+
+#' @rdname trace
+#' @export
+set_format <- function(utc = FALSE,
+                       show_date = TRUE,
+                       show_thread_id = FALSE,
+                       precision = "ms") {
+    rspdlite::set_format(utc, show_date, show_thread_id, precision)
+}
 
 .onAttach <- function(libname, pkgname) {
     txt <- paste0("\nThe 'tl' package is not meant for interactive work following 'library(tl)'.\n",

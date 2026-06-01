@@ -24,8 +24,8 @@ We can revisit the examples from the [rspdlite][rspdlite] package:
 
 #### From C++
 
-As seen in file [examples/example.cpp][ex] we can use the same C++ example from the
-[spdlite][spdlite] docs, but now accessing via the `tl` namespace:
+We can use the same C++ example from the [spdlite][spdlite] docs, but now accessing via the `tl`
+namespace:
 
 ```c++
 tl::critical("-- level to warn");
