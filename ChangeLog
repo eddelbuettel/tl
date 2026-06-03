@@ -1,3 +1,7 @@
+2026-06-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Mention tlexample package
+
 2026-06-01  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/tl.R (set_format): Add and document format setter

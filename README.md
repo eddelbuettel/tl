@@ -65,6 +65,22 @@ remains simpler. As we convert each argument directly to a character (then passe
 layer) we do not offer the extra formatting options available directly from C++. We have not found
 this to be an issue.
 
+#### Package `tlexample`
+
+The package [tlexample][tlexample] offers a complete example of integrated logging from both C++ and
+R. After installing [rspdlite][rspdlite] and [tl][tl] (along with their one dependency [Rcpp][rcpp])
+one can run the provided demo.  So for example in an [r2u][r2u] container (such as `rocker/r2u`), or
+any other environment with
+
+```sh
+root$ installGithub.r eddelbuettel/rspdlite eddelbuettel/tl eddelbuettel/tlexample
+root$ Rscript -e 'demo(ex, package="tlexample")'
+```
+
+or alternatively install [Rcpp][rcpp] and these package from source or as binary from [my
+r-universe][r-universe].  This [tlexample][tlexample] package is very lightweight and therefore a
+good playground to experiment with logging via [tl][tl], [rspdlite][rsplite] and [spdlite][spdlite].
+
 ### Author
 
 Dirk Eddelbuettel
@@ -83,3 +99,7 @@ tl is released under the GNU GPL, version 2 or later, just like R itself.
 [rspdlite]: https://github.com/eddelbuettel/rspdlite
 [ex]: inst/examples/example.cpp
 [exR]: inst/examples/example.R
+[tlexample]: https://github.com/eddelbuettel/tlexample
+[rcpp]: https://www.rcpp.org
+[r2u]: https://eddelbuettel.github.io/r2u
+[r-universe]: https://eddelbuettel.r-universe.dev/builds
