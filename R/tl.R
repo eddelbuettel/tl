@@ -85,3 +85,5 @@ set_format <- function(utc = FALSE,
                   "without attaching the package, and/or use the C++ header from compiled code.\n")
     packageStartupMessage(txt)
 }
+
+cppstandard <- function() rspdlite:::cppstandard()
