@@ -1,3 +1,7 @@
+2026-06-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml: Simpler dependencies as rspdlite on CRAN
+
 2026-06-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/tl.R (cppstandard): Pass on rspdlite:::cppstandard()
