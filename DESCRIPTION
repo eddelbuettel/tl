@@ -1,14 +1,13 @@
 Package: tl
 Type: Package
-Title: Tiny logging interface to 'rspdlite' wrapping 'spdlite' C++20 logging
+Title: Tiny Logging Interface to 'rspdlite' Wrapping 'spdlite' C++20 Logging
 Version: 0.0.1
-Date: 2026-05-31
+Date: 2026-05-17
 Authors@R: person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org")
-Description: Just how 'spdl' provides a nice and consistent interface to 'spdlog' (via 'RcppSpdlog'),
- this package does so for 'spdlite', the lightweight header-only C++-20 logging library, a lighter
- version of 'spdlog' and also written by Gabi Melman, providing most of the features of the larger
- version, and also including 'fmt' as fallback if 'std::format' is not selected. This package is
- essentially a thin shim around it for a more compact interface from both R and C++.
+Description: Just how 'spdl' provides a nice and consistent interface to 'spdlog' (via
+ 'RcppSpdlog'), this package does so for 'spdlite', the lightweight header-only C++-20
+ logging library that provides a lighter version of 'spdlog'. This package is essentially
+ a thin shim around it for a more compact interface from both R and C++.
 URL: https://github.com/eddelbuettel/tl
 BugReports: https://github.com/eddelbuettel/tl/issues
 License: GPL (>= 2)

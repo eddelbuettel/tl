@@ -1,5 +1,7 @@
 2026-06-17  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Release 0.0.1
+
 	* README.md (tl): Small edit and simplification
 	* .github/workflows/ci.yaml: Simpler dependencies as rspdlite on CRAN
 

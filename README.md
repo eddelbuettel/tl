@@ -102,5 +102,5 @@ tl is released under the GNU GPL, version 2 or later, just like R itself.
 [exR]: inst/examples/example.R
 [tlexample]: https://github.com/eddelbuettel/tlexample
 [rcpp]: https://www.rcpp.org
-[r2u]: https://eddelbuettel.github.io/r2u
+[r2u]: https://eddelbuettel.github.io/r2u/
 [r-universe]: https://eddelbuettel.r-universe.dev/builds
