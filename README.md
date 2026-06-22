@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/eddelbuettel/tl/actions/workflows/ci.yaml/badge.svg)](https://github.com/eddelbuettel/tl/actions/workflows/ci.yaml)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.r-project.org/Licenses/GPL-2)
+[![CRAN](https://www.r-pkg.org/badges/version/tl)](https://cran.r-project.org/package=tl)
+[![Dependencies](https://tinyverse.netlify.app/badge/tl)](https://cran.r-project.org/package=tl)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/tl)](https://eddelbuettel.r-universe.dev/tl)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/tl)](https://github.com/eddelbuettel/tl)
 
