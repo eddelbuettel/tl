@@ -1,5 +1,7 @@
 2026-06-28  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
 	* R/tl.R (init): Added intialization function, edit to docs
 	* man/trace.Rd: Regenerated
 	* NAMESPACE: export init()
