@@ -1,3 +1,10 @@
+2026-06-28  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/tl.R (init): Added intialization function, edit to docs
+	* man/trace.Rd: Regenerated
+	* NAMESPACE: export init()
+	* README.md: Small edits
+
 2026-06-27  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/include/tl.h: Condition on C++20 compilation, show fallback

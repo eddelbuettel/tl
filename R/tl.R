@@ -1,12 +1,19 @@
 
-#' Tiny logging wrapper for 'rspdlite'
+#' @title Tiny logging wrapper for 'rspdlite'
 #'
-#' These functions all pass on their arguments to the corresonding
+#' @description Logging support from R and C++ routines based on \pkg{rspdlite}
+#'
+#' @details These functions all pass on their arguments to the corresonding
 #' function in the \pkg{rspdlite} package implementing them. The core
 #' purpose of these functions is to provide a \sQuote{tighter} interface
 #' via the \code{tl::} prefix from both R and C++, i.e.
 #' \code{tl::debug("Condition met, value {}", val)} works from both.
 #' See the \pkg{rspdlite} package for more.
+#'
+#' The \code{init()} function passes a logging level from the environment variable
+#' \code{TL_LEVEL}, or a global option \code{getOption("tl.level")}, and sets it.
+#' Otherwise level \sQuote{info} remains the default.
+#'
 #' @param ... Argument(s) passed along
 #' @param utc Boolean flag to select display of current time in UTC rather than local,
 #' default is off
@@ -14,10 +21,14 @@
 #' @param show_thread_id Boolean flag to select display of current thread, default is off
 #' @param precision Character value for selected time precision: one of \dQuote{ms}
 #' (the default format), \dQuote{us}, \dQuote{ns} or \dQuote{none}
+#'
 #' @return In general, nothing is returned as the functions are invoked
 #' for their side effect of logging.
+#'
 #' @seealso \pkg{rspdlite}
+#'
 #' @export
+#'
 #' @examples
 #' lvl <- tl::get_level()
 #' tl::debug("This message is ignored by the default level 'info'.")
@@ -87,3 +98,14 @@ set_format <- function(utc = FALSE,
 }
 
 cppstandard <- function() rspdlite:::cppstandard()
+
+#' @rdname trace
+#' @export
+init <- function() {
+    ## retrieve optional logging level, default to 'info'
+    lvl <- Sys.getenv("TL_LEVEL", unset = getOption("tl.level", default="info"))
+    ## set given level (or default of 'info')
+    tl::set_level(lvl)
+    ## state level set (if level is at least 'debug')
+    tl::debug("[.onLoad] Set tl level to {}", lvl)
+}

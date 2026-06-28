@@ -72,11 +72,11 @@ this to be an issue.
 The package [tlexample][tlexample] offers a complete example of integrated logging from both C++ and
 R. After installing [rspdlite][rspdlite] and [tl][tl] (along with their one dependency [Rcpp][rcpp])
 one can run the provided demo.  So for example in an [r2u][r2u] container (such as `rocker/r2u`
-where we rely on the GitHub installation helper also pulling in dependencies [Rcpp][rcpp] and
-[rspdlite][rspdlite] as binaries)
+where we rely on the GitHub installation helper also pulling in dependencies [Rcpp][rcpp],
+[rspdlite][rspdlite] and this package [tl][tl] as binaries)
 
 ```sh
-root$ installGithub.r eddelbuettel/tl eddelbuettel/tlexample
+root$ installGithub.r eddelbuettel/tlexample
 root$ Rscript -e 'demo(ex, package="tlexample")'
 ```
 

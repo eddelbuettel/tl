@@ -11,6 +11,7 @@
 \alias{set_name}
 \alias{get_name}
 \alias{set_format}
+\alias{init}
 \title{Tiny logging wrapper for 'rspdlite'}
 \usage{
 trace(...)
@@ -35,6 +36,8 @@ get_name()
 
 set_format(utc = FALSE, show_date = TRUE, show_thread_id = FALSE,
            precision = "ms")
+
+init()
 }
 \arguments{
 \item{...}{Argument(s) passed along}
@@ -54,12 +57,19 @@ In general, nothing is returned as the functions are invoked
 for their side effect of logging.
 }
 \description{
+Logging support from R and C++ routines based on \pkg{rspdlite}
+}
+\details{
 These functions all pass on their arguments to the corresonding
 function in the \pkg{rspdlite} package implementing them. The core
 purpose of these functions is to provide a \sQuote{tighter} interface
 via the \code{tl::} prefix from both R and C++, i.e.
 \code{tl::debug("Condition met, value {}", val)} works from both.
 See the \pkg{rspdlite} package for more.
+
+The \code{init()} function passes a logging level from the environment variable
+\code{TL_LEVEL}, or a global option \code{getOption("tl.level")}, and sets it.
+Otherwise level \sQuote{info} remains the default.
 }
 \examples{
 lvl <- tl::get_level()
