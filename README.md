@@ -84,6 +84,13 @@ or alternatively install [Rcpp][rcpp] and these package from source or as binary
 r-universe][r-universe].  This [tlexample][tlexample] package is very lightweight and therefore a
 good playground to experiment with logging via [tl][tl], [rspdlite][rspdlite] and [spdlite][spdlite].
 
+#### Package `RcppNLoptExample`
+
+The package [RcppNLoptExample][rcppnloptexample] package (also on [CRAN][cran]) provides a complete
+example from the documentation of the underlying [NLopt][nlopt] library, bundled in a small yet
+complete package illustrating use of [NLopt][nlopt] from R. This offers a vessel for a good
+illustration of adding [tl][tl] from both the C++ and R, along with different logging levels.
+
 ### Author
 
 Dirk Eddelbuettel
@@ -96,6 +103,8 @@ tl is released under the GNU GPL, version 2 or later, just like R itself.
 [tl]: https://github.com/eddelbuettel/tl
 [spdlog]: https://github.com/gabime/spdlog
 [rcppspdlog]: https://github.com/eddelbuettel/RcppSpdlog
+[rcppnloptexample]: https://github.com/eddelbuettel/RcppNLoptExample
+[nlopt]: https://github.com/stevengj/nlopt
 [spdl]: https://github.com/eddelbuettel/spdl
 [spdlite]: https://github.com/gabime/spdlite
 [fmt]: https://github.com/fmtlib/fmt
